@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-   <audio id="player" autoplay controls>
+   <audio id="player" autoplay >
      <source src="media/aa.mp3" type="audio/mp3">
     </audio>
 
@@ -118,14 +118,6 @@
     
     </div>
   
-  <script>
-      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }
-  </script>
+  
   </body>
 </html>
